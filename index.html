@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div class="user">
+        <img src="images/pic.gif" alt="">
+        <h3 class="name">Shivrajsinh Zala</h3>
+        <p class="post">Human-Being</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#education">education</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- content section starts  -->
+
+<div class="container">
+
+    <section class="home" id="home">
+
+        <h3>Hi there...</h3>
+        <h3 class="name">my name is <span>Shivrajsinh Zala</span></h3>
+        <h3 class="post">i am <span class="typing-text"> </span></h3>
+
+        <a href="https://shivrajsinhzala.github.io/shivrajsinh.github.io/"><button class="btn">Contact Me</button></a>
+    </section>
+
+    <!-- about section  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading">About Me</h1>
+
+        <div class="content">
+            <h3 class="name">My name is <span>Shivrajsinh Zala</span></h3>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="skills">
+            <div class="progress">
+                <h3>HTML <span>95%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>CSS <span>85%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>JavaScript <span>65%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>Life <span>20%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+        </div>
+
+    </section>
+    <!-- education section  -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading">My Education</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="year">2017 - 2018</div>
+                <h3>Journey Started</h3>
+                <p>Completed 10th Class and Then I built Interest in Web development, 
+                    Learned HTML,CSS from scratch. </p>
+            </div>
+
+            <div class="box">
+                <div class="year">2018 - 2020</div>
+                <h3>Completed 12th(science)</h3>
+                <p>And Got My first pc setup.
+                    in that time i learned to code in different languages, but i didn't learned them properly that's why i Quit
+                </p>
+            </div>
+
+            <div class="box">
+                <div class="year">2021</div>
+                <h3>Life changing moment</h3>
+                <p>made some college friends that actually work with me to built extra-ordinary thing in terms of websites,
+                    made ShivTech.in(currently inactive) with the team of 5 people.
+                    It was fun to learn new things
+                </p>
+            </div>
+
+            <div class="box">
+                <div class="year">Goals</div>
+                <h3>Full Stack Web-Developer</h3>
+                <p>I wanna Become Full Stack Web-Developer and one day I will achieve my goal.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+</div>
+
+<!-- content section ends -->
+
+<!-- theme toggler  -->
+
+<div class="theme-toggler">
+    <span style="background: linear-gradient(deeppink, purple);"></span>
+    <span style="background: linear-gradient(lightgreen, crimson);"></span>
+    <span style="background:linear-gradient(blueviolet, deeppink)"></span>
+    <span style="background:linear-gradient(coral, blueviolet)"></span>
+    <span style="background:linear-gradient(#999, #111)"></span>
+</div>
+
+
+<!-- type.js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+<script>
+
+    var type = new Typed('.typing-text',{
+        strings : [ '', ' a Front End Developer', 'a Graphic Designer', 'an Entreprenuer' ,'a Web Designer' , 'a Student' , 'a Tech-geek' , 'Bad at Politics 😐'],
+        typeSpeed: 90,
+        loop:true
+    });
+
+    let themeColor = document.querySelectorAll('.theme-toggler span');
+    themeColor.forEach(color => color.addEventListener('click', () =>{
+        let background = color.style.background;
+        document.querySelector('body').style.background = background;
+    }));
+
+</script>
+
+</body>
+</html>
